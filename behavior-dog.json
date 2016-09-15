@@ -1,0 +1,61 @@
+[
+	{
+		"AGENT_ATTRIBUTES": {
+				"agentFoodChain"  : 0.3,
+				"type"			: "dog" ,
+				"subType"		: "Russel"
+			},
+		"FOOD_CHAIN" : {
+				"grass" 		: 0.0,
+				"sheep"			: 0.1,
+				"birds, mice" 	: 0.15,
+				"house cats"  	: 0.2,
+				"dog" 			: 0.3,
+				"hippo"			: 0.7,
+				"shark"			: 0.8,
+				"lion"			: 0.9,
+				"godzilla"		: 1.0 
+			},
+		"CONSIDERATION_TYPE" : {
+				"$agent < $detected" : "thread" ,
+				"$agent = $detected" : "neutral",
+				"$agent > $detected" : "prey"
+			},
+		"OBEDIENCE_PROBABILITY" : {
+				"threat"		: 1.0, 
+				"neutral"		: 0.5, 
+				"prey" 			: 0.1, 
+				"owner" 		: 0.9, 
+				"other_avatar" 	: 0.5,
+	"ACTIONS": [
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"watching",		"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"eat",			"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"chase",		"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"avoid",		"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"follow|swarm|flock",		"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"bump|push",	"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"ride|perch",	"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"mimic",		"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"play_dead",	"target":	"",			"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"speak",		"target":	"",			"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"sit",			"target":	"",			"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"stay",			"target":	"",			"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"sleep",		"target":	"",			"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"jump_over",	"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"jdig",			"target":	"",			"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"mimic",		"circle",				"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"mimic",		"play_tag",				"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"mimic",		"beg",					"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"find",			"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"give|deliver",	"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"retrieve|fetch","target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"meet",			"target":	"master",	"group": 4564 },
+			{ "fight":	0.3,	"flee": 	0.4,	"detectedType":	"dog",	"default":	"face|look",	"target":	"master",	"group": 4564 }
+		],
+	"BEHAVIORS": [  
+			//    chance, 	"behavior_command", chance, "behavior_command"
+				[ 0.4, 		"bark", 			0.2, 	"sit" ],
+				[ 4, 		"bark", 			2, 		"sit" ],
+		]	
+	}
+]
